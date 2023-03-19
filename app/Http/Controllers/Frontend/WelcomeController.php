@@ -12,19 +12,6 @@ class WelcomeController extends Controller
     {
 
 
-        // user_id auth()->id()
-        // subject
-        // message
-
-        // order
-        //     customer_id
-            
-        // order_items
-        //     order_id
-        //     item_id
-        //     qty
-        //     price
-
 
         $bestsellers = Category::where('name', 'Best Sellers')->first();
         return view('welcome',compact('bestsellers'));
