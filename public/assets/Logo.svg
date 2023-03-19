@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124.98" height="62" viewBox="0 0 124.98 62">
+  <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1.497)">
+    <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(0 5)">
+      <path id="Path_1" data-name="Path 1" d="M1747.18,443.711c.372,2.416,11.312-2.011,13.076-6.287a20.911,20.911,0,0,0,.629-4.778c.175-1.628,1.585-3.155,0-3.018-14.459,1.257-13.7,9.933-13.7,9.933v21.123h21V410.141H1718.52v50.545h24.266v-12.7s-.754-8.55-12.7-8.424c-2.34.025-1.581,1.746-1.132,3.521.483,2.006.983,4.686,4.024,6.915a19.078,19.078,0,0,0,9.807,3.4" transform="translate(-1718.517 -410.141)" fill="none" stroke="#05796b" stroke-width="3"/>
+      <path id="Path_2" data-name="Path 2" d="M1729.2,422.211s15.465.126,13.453,14.459c-.393,2.8-.391,2.21-2.137,1.257-.859-.455-3.326-.828-4.652-2.012-2.04-1.814-4.052-2.631-5.658-5.909a11.949,11.949,0,0,1-1.006-7.795Z" transform="translate(-1718.517 -410.141)" fill="none" stroke="#05796b" stroke-width="3"/>
+    </g>
+    <text id="Plant_World" data-name="Plant World" transform="translate(53.483 25)" fill="#05796b" font-size="27" font-family="TrebuchetMS, Trebuchet MS"><tspan x="0" y="0">Plant</tspan><tspan x="0" y="31">World</tspan></text>
+  </g>
+</svg>
