@@ -10,9 +10,6 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-
-
-
         $bestsellers = Category::where('name', 'Best Sellers')->first();
         return view('welcome',compact('bestsellers'));
     }
