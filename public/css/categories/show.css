@@ -1,0 +1,112 @@
+.category-header{
+    margin: 50px 0 0 0;
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.category-header p{
+    padding: 10px 0;
+}
+/* Page Header */
+
+.cards{
+    width: 100%;
+    padding: var(--page--padding);
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: visible;
+}
+.cards .card{
+    height: 550px;
+    margin: 10px;
+    padding: 0 0 10px;
+    display: grid;
+    grid-template-rows: 50% 35% 15%;
+    border-radius: 10px; 
+    box-shadow: 0 10px 20px #ddd;
+    transition: .5s box-shadow, .5s transform;
+}
+.cards .card:hover{
+    box-shadow: 0 10px 30px #808080;
+    transform: translateY(-10px);
+}
+.cards .card .image{
+    height: 100%;
+    width: 100%;
+}
+.cards .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cards .card .text{
+    position: relative;
+    height: 100%;
+    width:100%;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.cards .card .text::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(to top,#eff2ff,#0000);
+}
+.cards .card .text span{
+    color: white;
+    padding: 10px;
+    width: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #05796b;
+    border-radius: 100px;
+}
+.cards .card .text h4{
+    padding: 10px 0 0 0;
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
+.cards .card .text p{
+    padding: 10px 0;
+}
+.cards .card .order{
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between; 
+}
+.cards .card .order form button{
+    padding: 10px 20px;
+    border: 1px solid #05796b;
+    color: #05796b;
+    transition: .5s background, .5s color;
+}
+.cards .card .order form button:hover{
+    background: #05796b;
+    color: #fff;
+}
+.cards .card:hover .order form button{
+    background: #05796b;
+    color: #fff;
+    border: 1px solid #05796b;
+}
+.cards .card:hover .order form button:hover{
+    color: #05796b;
+    background: #0000;
+    border: 1px solid #05796b;
+}
+.cards .card .order p{
+    color: #05796b;
+}
