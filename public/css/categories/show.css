@@ -22,7 +22,7 @@
     overflow: visible;
 }
 .cards .card{
-    height: 550px;
+    height: 520px;
     margin: 10px;
     padding: 0 0 10px;
     display: grid;
@@ -78,6 +78,7 @@
 }
 .cards .card .text p{
     padding: 10px 0;
+    font-size: var(--a--);
 }
 .cards .card .order{
     height: 100%;

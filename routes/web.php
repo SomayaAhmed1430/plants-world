@@ -42,7 +42,8 @@ Route::get('/pots', [PotsControllers::class, 'index'])->name('pots.index');
 Route::get('/about', [AboutUsController::class, 'index'])->name('about.index');
 Route::get('/guide', [GuideController::class, 'index'])->name('guide.index');
 Route::post('/guide', [GuideController::class, 'create'])->name('guide.store');
-Route::get('/order', [OrderNowController::class, 'index'])->name('order.index');
+Route::get('/order/{id}', [OrderNowController::class, 'index'])->name('order.index');
+Route::post('/order/{id}', [OrderNowController::class, 'store'])->name('order.store');
 Route::get('/thankyou', [WelcomeController::class, 'thankyou'])->name('thankyou');
 
 Route::get('/dashboard', function () {

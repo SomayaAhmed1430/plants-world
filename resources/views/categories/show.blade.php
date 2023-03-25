@@ -10,7 +10,7 @@
     </div>
     <div class="cards">
         @foreach ($category->menus as $menu)
-                <a href="#" class="card">
+                <a href="{{ route('order.index', $menu->id) }}" class="card">
                     <div class="image">
                         <img src="{{ Storage::url($menu->image) }}" alt="">
                     </div>
@@ -22,7 +22,7 @@
                         </p>
                     </div>
                     <div class="order">
-                        <form action="https://twitter.com">
+                        <form action="{{ route('order.index') }}">
                             <button>Order Now</button>
                         </form>
                         <p>{{ $menu->price }}</p>

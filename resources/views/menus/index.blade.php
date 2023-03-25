@@ -22,7 +22,7 @@
                     </p>
                 </div>
                 <div class="order">
-                    <a>Order Now</a>
+                    <a href="{{ route('order.index') }}">Order Now</a>
                     <p>{{ $menu->price }}</p>
                 </div>
             </div>

@@ -14,4 +14,10 @@ class MenuController extends Controller
         $menus = Menu::all();
         return view('menus.index', compact('menus'));
     }
+
+    // public function order($id)
+    // {
+    //     $product = Menu::find($id);
+    //     return view('order.index', compact('product'));
+    // }
 }

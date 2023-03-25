@@ -1,0 +1,162 @@
+header .logo img {
+    animation-delay: 0s;
+}
+
+header ul li {
+    animation-delay: 0s;
+}
+
+header ul li:nth-of-type(2) {
+    animation-delay: 0.05s;
+}
+
+header ul li:nth-of-type(3) {
+    animation-delay: 0.1s;
+}
+
+header ul li:nth-of-type(4) {
+    animation-delay: 0.15s;
+}
+
+header ul li:nth-of-type(5) {
+    animation-delay: 0.2s;
+}
+
+header .register li {
+    animation-delay: 0.25s;
+}
+
+header .register li:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+
+header {
+    padding: 0px 300px;
+}
+
+/* header */
+
+.product {
+    margin-top: 100px;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--products--padding);
+}
+
+.product .product-con form{
+    min-height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border: 1px solid #05796b;
+}
+
+.product .product-con form .images {
+    display: grid;
+    grid-template-columns: 0% 1fr;
+}
+.product .product-con form .images img{
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product .product-con form .images .img-list img.active {
+    opacity: 1;
+}
+
+.product .product-con form .text {
+    height: 70vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.product .product-con form .text h3 {
+    padding: 30px 0px 10px 0px;
+}
+
+.product .product-con form .text p {
+    font-size: var(--a--);
+    color: #2d2d2d;
+}
+
+.product .product-con form .text .quantity {
+    margin: 20px 0;
+    border: none;
+}
+
+.product .product-con form .text .quantity label {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: var(--a--);
+    border: none;
+}
+
+
+.product .product-con form .text .quantity .amount {
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    background: #fff;
+    box-shadow: 0 0 20px #ddd;
+    border: none;
+    overflow: hidden;
+}
+
+.product .product-con form .text .quantity .amount button {
+    height: 50px;
+    width: 50px;
+    color: #05796b;
+    background: #fff;
+    font-size: var(--p--);
+    padding-bottom: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s color, .5s background;
+}
+
+.product .product-con form .text .quantity .amount button:hover {
+    background: #05796cd5;
+    color: #fff;
+}
+
+.product .product-con form .text .quantity .amount button:active {
+    background: #05796caa;
+    color: #fff;
+}
+
+.product .product-con form .text .add-to-cart input {
+    border: 1px solid #05796b;
+    color: #05796b;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    transition: .5s color, .5s background;
+}
+
+.product .product-con form .text .add-to-cart input:nth-of-type(2) {
+    background: #05796b;
+    color: #fff;
+    border: 1px solid #05796b;
+}
+
+.product .product-con form .text .add-to-cart input:hover:nth-of-type(2) {
+    background: #0000;
+    color: #05796b;
+    border: 1px solid #05796b;
+}
+
+.product .product-con form .text .add-to-cart input:hover {
+    background: #05796b;
+    color: #fff;
+}

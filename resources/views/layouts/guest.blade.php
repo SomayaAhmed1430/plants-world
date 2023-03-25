@@ -40,11 +40,11 @@
                         <a href="{{ route('pots.index') }}">Pots & Planters</a>
                     </li>
                     <li>
-                        @if (Auth::user()->is_admin)
+                        {{-- @if (Auth::user()->is_admin)
                             <x-nav-link class="x-nav-link" :href="route('admin.index')" :active="request()->routeIs('dashboard')">
                                 {{ __('Admin') }}
                             </x-nav-link>
-                        @endif              
+                        @endif               --}}
                     </li>
                 </ul>
                 <li>
