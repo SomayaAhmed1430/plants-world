@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\CommentController;
 use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Admin\PotsController;
 use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Admin\TableController;
@@ -10,6 +12,7 @@ use App\Http\Controllers\Frontend\AboutUsController;
 use App\Http\Controllers\Frontend\CategoryController as FrontendCategoryController;
 use App\Http\Controllers\Frontend\GuideController;
 use App\Http\Controllers\Frontend\MenuController as FrontendMenuController;
+use App\Http\Controllers\Frontend\OrderController;
 use App\Http\Controllers\Frontend\OrderNowController;
 use App\Http\Controllers\Frontend\PotsControllers;
 use App\Http\Controllers\Frontend\ReservationController as FrontendReservationController;
@@ -44,6 +47,10 @@ Route::get('/guide', [GuideController::class, 'index'])->name('guide.index');
 Route::post('/guide', [GuideController::class, 'create'])->name('guide.store');
 Route::get('/order/{id}', [OrderNowController::class, 'index'])->name('order.index');
 Route::post('/order/{id}', [OrderNowController::class, 'store'])->name('order.store');
+Route::get('/checkout', [OrderController::class, 'index'])->name('checkout.index');
+Route::get('/checkoutt', [OrderController::class, 'cashorder'])->name('checkout.cashorder');
+Route::get('/removecart/{id}', [OrderController::class, 'removecart'])->name('removecart.removecart');
+Route::post('/comment', [GuideController::class, 'store'])->name('comment.store');
 Route::get('/thankyou', [WelcomeController::class, 'thankyou'])->name('thankyou');
 
 Route::get('/dashboard', function () {
@@ -64,6 +71,33 @@ Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(func
     Route::resource('/tables', TableController::class);
     Route::resource('/reservations', ReservationController::class);
     Route::resource('/pots', PotsController::class);
+    Route::resource('/orders', AdminOrderController::class);
+    Route::resource('/comments', CommentController::class);
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('t', function() {
+
+    $arr = [
+        // [
+        //     'name' => '1',
+        // ],
+        // [
+        //     'name' => '2',
+        // ],
+        // [
+        //     'name' => '3',
+        // ],
+        // [
+        //     'name' => '4',
+        // ]
+    ];
+
+    foreach($arr as $arr) {
+        dump($arr['name']);
+    }
+
+    dump($arr['name']);
+
+});

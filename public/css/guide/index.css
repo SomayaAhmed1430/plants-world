@@ -1,0 +1,256 @@
+.home {
+    min-height: 60vh;
+    width: 100%;
+    padding: var(--page--padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.home .title .title-con {
+    font-weight: bolder;
+    letter-spacing: 10px;
+    transform: translateY(200px) rotate(50deg);
+    animation: animation 2.5s ease forwards;
+    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+    animation-delay: 0.1s;
+    color: #05796b;
+}
+.home h1 {
+    font-size: 3.5vw;
+    line-height: 80%;
+    overflow: hidden;
+}
+.home h1 li {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    overflow: hidden;
+}
+.home h1 li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #e9edff;
+    animation: animationsss 3.2s ease forwards;
+    animation-delay: 0.3s;
+}
+.home h1 li div {
+    transform: translateY(200px) rotate(10deg);
+    padding: 25px 0px;
+    animation: animation 3s ease forwards;
+    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+    animation-delay: 0.3s;
+}
+.home h1 li:nth-of-type(2):after,
+.home h1 li:nth-of-type(2) div {
+    animation-delay: 0.35s;
+}
+.home h1 li:nth-of-type(3):after,
+.home h1 li:nth-of-type(3) div {
+    animation-delay: 0.4s;
+}
+.home h1 li:nth-of-type(4):after,
+.home h1 li:nth-of-type(4) div {
+    animation-delay: 0.45s;
+}
+.home h1 li:nth-of-type(5):after,
+.home h1 li:nth-of-type(5) div {
+    animation-delay: 0.5s;
+}
+.home h1 li:nth-of-type(6):after,
+.home h1 li:nth-of-type(6) div {
+    animation-delay: 0.55s;
+}
+.home h1 li:nth-of-type(7):after,
+.home h1 li:nth-of-type(7) div {
+    animation-delay: 0.6s;
+}
+.home h1 li:nth-of-type(8):after,
+.home h1 li:nth-of-type(8) div {
+    animation-delay: 0.65s;
+}
+.home h1 li:nth-of-type(9):after,
+.home h1 li:nth-of-type(9) div {
+    animation-delay: 0.7s;
+}
+.home h1 li:nth-of-type(10):after,
+.home h1 li:nth-of-type(10) div {
+    animation-delay: 0.75s;
+}
+.home .home-pharagraph {
+    position: relative;
+    overflow: hidden;
+}
+.home p {
+    transform: translateY(300px) rotate(20deg);
+    animation: animation 3s ease forwards;
+    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+    animation-delay: 0.6s;
+}
+/* home */
+
+.parallaxed {
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    margin: auto;
+}
+.parallaxed::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #e9edff;
+    animation: parallax 3s ease forwards;
+    animation-timing-function: cubic-bezier(0.41, 0.78, 0.17, 1);
+    animation-delay: 2s;
+    z-index: 1;
+}
+.parallax {
+    min-height: 110vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transform: scale(1.5);
+    opacity: 0;
+    animation: parallax 2s ease forwards;
+    animation-timing-function: cubic-bezier(0.41, 0.78, 0.17, 1);
+    animation-delay: 2s;
+}
+.parallaxed img {
+    height: 110vh;
+    width: 100%;
+    object-fit: cover;
+}
+@keyframes parallax {
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        background: #00000044;
+    }
+}
+/* parallaxed  */
+
+.howto {
+    min-height: 100vh;
+    width: 100%;
+    padding: var(--page--padding);
+    padding-top: 100px;
+}
+.howto h3 {
+    padding-top: 100px;
+}
+.howto ul li {
+    padding: 0 20px 20px 20px;
+    font-size: var(--p--);
+    color: #555;
+}
+.howto .load {
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.howto .load a {
+    border: 1px solid #05796b;
+    color: #05796b;
+    padding: 1rem 2rem;
+    transition: 0.5s background, 0.5s color;
+}
+.howto .load a:hover {
+    color: #fff;
+    background: #05796b;
+}
+/* How To */
+
+.comments {
+    min-height: 100vh;
+    width: 100%;
+    padding: var(--page--padding);
+}
+.comments .comments-header {
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.comments form {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: visible;
+}
+.comments form textarea {
+    height: 100px;
+    width: 100%;
+    margin: 20px 0;
+    outline: none;
+    border: none;
+    background: #e9edff;
+    border-bottom: 2px solid #05796c3d;
+    font-size: var(--h3--);
+    transition: 0.5s color, 0.5s border, 0.5s background;
+}
+.comments form textarea:hover {
+    border-bottom: 2px solid #05796c8b;
+}
+.comments form textarea::placeholder {
+    transition: 0.5s color, 0.5s border;
+    color: #05796c3d;
+}
+.comments form textarea:hover::placeholder {
+    color: #05796c8b;
+}
+.comments form textarea:focus {
+    transition: 0.5s color, 0.5s border;
+    border-bottom: 2px solid #05796b;
+    --tw-ring-color: #0000;
+}
+.comments form textarea:focus::placeholder {
+    transition: 0.5s color, 0.5s border;
+    color: #05796b;
+}
+.comments form textarea {
+    height: 200px;
+    resize: none;
+}
+.comments form input{
+    height: 50px;
+    width: 100%;
+    font-size: var(--p--);
+    background: #0000;
+    border: 2px solid #05796b;
+    color: #05796b;
+    cursor: pointer;
+    transition: .5s color, .5s background;
+}
+.comments form input:disabled{
+    color: #fff;
+    background: #05796b;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.comments form input:disabled:hover{
+    color: #fff;
+    background: #05796b;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.comments form input:hover{
+    color: #fff;
+    background: #05796b;
+    cursor: pointer;
+    opacity: 1;
+}

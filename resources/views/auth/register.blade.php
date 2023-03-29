@@ -16,6 +16,18 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+        <!-- Phone -->
+        <div>
+            <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autofocus autocomplete="phone" placeholder="Enter your phone"/>
+            <x-input-error :messages="$errors->get('phone')" class="mt-2" />
+        </div>
+
+        <!-- Address -->
+        <div>
+            <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autofocus autocomplete="address" placeholder="Enter your address"/>
+            <x-input-error :messages="$errors->get('address')" class="mt-2" />
+        </div>
+
         <!-- Password -->
         <div class="mt-4">
             {{-- <x-input-label for="password" :value="__('Password')" /> --}}
@@ -62,6 +74,8 @@
     }
     #name,
     #email,
+    #phone,
+    #address,
     #password,
     #password_confirmation
     {
@@ -74,6 +88,8 @@
     }
     #name:focus,
     #email:focus,
+    #phone:focus,
+    #address:focus,
     #password:focus,
     #password_confirmation:focus
     {
@@ -85,6 +101,8 @@
     }
     #name::placeholder,
     #email::placeholder,
+    #phone::placeholder,
+    #address::placeholder,
     #password::placeholder,
     #password_confirmation::placeholder
     {

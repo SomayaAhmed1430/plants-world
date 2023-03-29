@@ -35,7 +35,7 @@ class OrderNowController extends Controller
             $cart->product_id = $product->id;
             $cart->quantity = $request->quantity;
             $cart->save();
-            return redirect()->back();
+            return redirect('checkout');
         }
         else{
             return redirect('login');

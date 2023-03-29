@@ -22,7 +22,7 @@
                         </p>
                     </div>
                     <div class="order">
-                        <form action="{{ route('order.index') }}">
+                        <form action="{{ route('order.index', $menu->id) }}">
                             <button>Order Now</button>
                         </form>
                         <p>{{ $menu->price }}</p>

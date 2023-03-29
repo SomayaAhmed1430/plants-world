@@ -31,7 +31,7 @@
                             @auth --}}
                                 <div class="add-to-cart">
                                     <input type="submit" value="Add to cart"> </input>
-                                    <input type="submit" value="Buy Now"></input>
+                                    {{-- <input type="submit" value="Buy Now"></input> --}}
                                 </div>
                             {{-- @else
                                 <div class="add-to-cart">

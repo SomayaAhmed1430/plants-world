@@ -45,16 +45,16 @@ a {
     color: black;
 }
 body{
-    background: #eff2ff;
+    background: #e9edff;
 }
 
 header {
-    min-height: 100px;
+    min-height: 110px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 200px;
+    padding: 0px 200px 10px 200px;
 }
 header .logo img {
     transform: translateY(200px) rotate(10deg);
@@ -113,6 +113,61 @@ header ul li .x-nav-link{
     font-size: 0.9vw;
     color: black;
     padding: 10px 20px;
+}
+header ul.info{
+    position: relative;
+    overflow: visible;
+    transition: .5s transform;
+}
+header ul.info.accountName{
+    transform: translateY(-10px);
+}
+header ul.info li{
+    position: relative;
+    overflow: visible;
+}
+header ul.info li .name{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s transform;
+}
+header ul.info li .name .arrow.ActiveArrow{
+    transform: rotate(180deg);
+}
+header ul.info li .name a.cart{
+    padding: 0 10px;
+}
+header ul.info li form{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background: #e9edff;
+    color: #05796b;
+    border-radius: 5px;
+    border: 1px solid #05796b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: .5s color, .5s background, .5s opacity, .5s transform;
+}
+header ul.info li form.ActiveformLogOut{
+    opacity: 1;
+    transform: translateY(0px);
+}
+header ul.info li form a{
+    color: #05796b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header ul.info li form a:hover{
+    background: #05796b;
+    color: #fff;
 }
 /* header */
 

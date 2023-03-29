@@ -52,6 +52,7 @@ header {
     display: grid;
     grid-template-columns: 60% 40%;
     border: 1px solid #05796b;
+    border-radius: 10px;
 }
 
 .product .product-con form .images {
@@ -72,6 +73,9 @@ header {
     height: 70vh;
     width: 100%;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .product .product-con form .text h3 {
@@ -85,7 +89,6 @@ header {
 
 .product .product-con form .text .quantity {
     margin: 20px 0;
-    border: none;
 }
 
 .product .product-con form .text .quantity label {
@@ -93,6 +96,11 @@ header {
     font-weight: bolder;
     font-size: var(--a--);
     border: none;
+}
+.product .product-con form .text .quantity input {
+    border-radius: 5px;
+    background-color: #e9edff;
+    border-color: #05796b;
 }
 
 
@@ -120,6 +128,7 @@ header {
     outline: none;
     cursor: pointer;
     transition: .5s color, .5s background;
+    border-radius: 5px;
 }
 
 .product .product-con form .text .quantity .amount button:hover {
@@ -141,6 +150,7 @@ header {
     align-items: center;
     justify-content: center;
     margin: 20px 0;
+    border-radius: 5px;
     transition: .5s color, .5s background;
 }
 
