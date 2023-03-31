@@ -1,5 +1,11 @@
 <head>
     <link rel="stylesheet" href="{{ asset("css/categories/index.css") }}">
+    <title>Plant World | Categories</title>
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
 </head>
 <x-guest-layout>
 

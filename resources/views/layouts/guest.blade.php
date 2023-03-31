@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="{{ asset('css/base.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/loading.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-    <title>Plants World</title>
+    <title>Plant World | Home</title>
 </head>
 
 <body class="font-sans text-gray-900 antialiased">
 
     <header :class="isOpen ? 'flex' : 'hidden'">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
             <img src="{{ asset('assets/Logo.svg') }}" alt="" />
         </a>
         <ul>

@@ -1,5 +1,11 @@
 <head>
     <link rel="stylesheet" href="{{ asset('css/guide/index.css') }}">
+    <title>Plant World | Guide | Contact Us</title>
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
 </head>
 <x-guest-layout>
     <div>
@@ -153,7 +159,7 @@
             <li>- ZZ plant</li>
         </ul>
         <div class="load">
-            <a href="#">Load More Guiding</a>
+            <a href="https://www.gardenersworld.com/how-to/grow-plants/gardening-for-beginners-how-to-plant/">Load More Guiding</a>
         </div>
     </div>
     <!-- How To -->

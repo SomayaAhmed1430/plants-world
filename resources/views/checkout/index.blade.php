@@ -1,5 +1,11 @@
 <head>
     <link rel="stylesheet" href="{{ asset('css/checkout/index.css') }}">
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
+    <title>Plant World | Cart</title>
 </head>
 <x-guest-layout>
     <div>
@@ -59,7 +65,7 @@
                     <div class="bayment">
                         <ul>
                             <li>
-                                <h3>Bayment Methoud :</h3>
+                                <h3>Payment Methoud :</h3>
                             </li>
                             <li>
                                 <input type="checkbox" name="" id="" />

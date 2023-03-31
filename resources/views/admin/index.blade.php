@@ -1,3 +1,11 @@
+<head>
+    <title>Admin | Users</title>
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
+</head>
 <x-admin-layout>
     {{-- <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -234,7 +242,7 @@
                                             <td>{{ $user->id }}</td>
                                             <td>
                                                 <div class="d-inline-block align-middle">
-                                                    <img src="{{ asset('adminDashboard/assets/images/user/avatar-4.jpg') }}"
+                                                    <img src="{{ asset('assets/avatar2.svg') }}"
                                                         alt="user image" class="img-radius wid-40 align-top m-r-15">
                                                     <div class="d-inline-block">
                                                         <h6>{{ $user->name }}</h6>

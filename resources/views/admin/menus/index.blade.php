@@ -1,3 +1,11 @@
+<head>
+    <title>Admin | Products</title>
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
+</head>
 <style>
     table{
         margin-top: 2%;

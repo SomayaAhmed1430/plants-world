@@ -1,5 +1,11 @@
 <head>
     <link rel="stylesheet" href="{{asset("css/categories/show.css")}}">
+    <title>Plant World | Products</title>
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
 </head>
 <x-guest-layout>
     <div class="category-header">

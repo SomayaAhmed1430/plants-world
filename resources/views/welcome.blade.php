@@ -1,3 +1,11 @@
+<head>
+    <link rel="stylesheet" href="{{ asset('css/home/index.css') }}">
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
+</head>
 <x-guest-layout>
 
     <div class="loading">
@@ -5,34 +13,19 @@
     </div>
 
     <div class="home">
+        <div class="title">
+            <div class="title-con">Home</div>
+        </div>
         <h1>
-            <!-- We love helping you <br />
-            to safe the earth -->
-            <li>
-                <div>We</div>
-            </li>
-            <li>
-                <div>love</div>
-            </li>
-            <li>
-                <div>helping</div>
-            </li>
-            <li>
-                <div>you</div>
-            </li>
+            <li><div>We</div></li>
+            <li><div>love</div></li>
+            <li><div>helping</div></li>
+            <li><div>you</div></li>
             <br />
-            <li>
-                <div>to</div>
-            </li>
-            <li>
-                <div>safe</div>
-            </li>
-            <li>
-                <div>the</div>
-            </li>
-            <li>
-                <div>earth</div>
-            </li>
+            <li><div>to</div></li>
+            <li><div>safe</div></li>
+            <li><div>the</div></li>
+            <li><div>earth</div></li>
         </h1>
         <div class="home-pharagraph">
             <p>
@@ -45,7 +38,7 @@
 
     <div class="parallaxed">
         <div class="parallax">
-            <img data-u-scale="1.2" data-u-speed="2" data-parallax src="./assets/pexels-huy-phan-3209811.jpg"
+            <img data-u-scale="1.2" data-u-speed="2" data-parallax src="{{ asset('assets/pexels-huy-phan-3209811.jpg') }}"
                 alt="" />
         </div>
     </div>
@@ -89,7 +82,7 @@
         </div>
         <div class="plant-care-con">
             <div>
-                <img src="./assets/bx-water.svg" alt="" />
+                <img src="{{ asset('assets/bx-water.svg') }}" alt="" />
                 <h3>Humidity Control</h3>
                 <p>
                     You Have to be diligent in finding out the temperature
@@ -97,7 +90,7 @@
                 </p>
             </div>
             <div>
-                <img src="./assets/bx-save.svg" alt="" />
+                <img src="{{ asset('assets/bx-save.svg') }}" alt="" />
                 <h3>Pest Anticipation</h3>
                 <p>
                     Rotate crop types regularly by planting serveral
@@ -105,7 +98,7 @@
                 </p>
             </div>
             <div>
-                <img src="./assets/bx-cut.svg" alt="" />
+                <img src="{{ asset('assets/bx-cut.svg') }}" alt="" />
                 <h3>Pruning Weeds</h3>
                 <p>
                     Be diligent in cleaning the weeds or weeds that grow
@@ -145,12 +138,12 @@
         <div class="guide-con">
             <div class="left-sec">
                 <div class="guide-parallax" data-u-scale="1.2" data-u-speed="2" data-parallax>
-                    <img src="./assets/gcArtboard_1_copy_2_887x493.webp" alt="" />
+                    <img src="{{ asset('assets/gcArtboard_1_copy_2_887x493.webp') }}" alt="" />
                 </div>
             </div>
             <div class="right-sec">
                 <div class="guide-parallax" data-u-scale="1.2" data-u-speed="2" data-parallax>
-                    <img src="./assets/gcArtboard_1_copy_2_887x493.webp" alt="" />
+                    <img src="{{ asset('assets/gcArtboard_1_copy_2_887x493.webp') }}" alt="" />
                 </div>
             </div>
         </div>
@@ -162,13 +155,13 @@
                 <div>
                     <div class="text">
                         <h3>House Plant Accessories</h3>
-                        <a href="#">Shop Accessories</a>
+                        <a href="{{ route('categories.index') }}">Shop Accessories</a>
                     </div>
                 </div>
                 <div>
                     <div class="text">
                         <h3>Promotional Item</h3>
-                        <a href="#">Shop Gift Cards</a>
+                        <a href="{{ route('categories.index') }}">Shop Gift Cards</a>
                     </div>
                 </div>
             </div>
@@ -176,19 +169,19 @@
                 <div>
                     <div class="text">
                         <h3>New Arrivals!</h3>
-                        <a href="#">Shop Now</a>
+                        <a href="{{ route('categories.index') }}">Shop Now</a>
                     </div>
                 </div>
                 <div>
                     <div class="text">
                         <h3>Seed Packets</h3>
-                        <a href="#">Shop Seeds</a>
+                        <a href="{{ route('categories.index') }}">Shop Seeds</a>
                     </div>
                 </div>
                 <div>
                     <div class="text">
                         <h3>Shipping Info</h3>
-                        <a href="#">How We Ship Plants</a>
+                        <a href="{{ route('categories.index') }}">How We Ship Plants</a>
                     </div>
                 </div>
             </div>
@@ -205,7 +198,7 @@
         </div>
         <div class="cards-con">
             @foreach ($bestsellers->menus as $menu)
-                <a href="https://twitter.com" class="card">
+                <a href="{{ route('categories.index') }}" class="card">
                     <div class="image">
                         <img src="{{ Storage::url($menu->image) }}" alt="">
                     </div>

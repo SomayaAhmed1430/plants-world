@@ -1,5 +1,11 @@
 <head>
     <link rel="stylesheet" href="{{ asset('css/order/index.css') }}">
+    <title>Plant World | Order</title>
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
 </head>
 <x-guest-layout>
     <div class="product">
@@ -20,7 +26,7 @@
                         </p>
                         <div class="quantity">
                             <label for="Quantity">Quantity</label>
-                            <input name="quantity" type="number" min="1">
+                            <input name="quantity" type="number" value="1">
                             {{-- <div class="amount">
                                 <button class="negative">-</button>
                                 <p name="quantity" type="number" class="counter">1</p>

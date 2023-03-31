@@ -8,11 +8,89 @@
     text-align: center;
     flex-direction: column;
 }
+.categories-header2 {
+    margin: 50px 0 0 0;
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
 
 .categories-header p {
     padding: 10px 0;
 }
-
+.categories-header .title .title-con {
+    font-weight: bolder;
+    letter-spacing: 10px;
+    transform: translateY(200px) rotate(50deg);
+    animation: animation 2.5s ease forwards;
+    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+    animation-delay: 0.1s;
+    color: #05796b;
+}
+.categories-header h1 li {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    overflow: hidden;
+}
+.categories-header h1 li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #e9edff;
+    animation: animationsss 3.2s ease forwards;
+    animation-delay: 0.3s;
+}
+.categories-header h1 li div {
+    transform: translateY(200px) rotate(10deg);
+    padding: 25px 0px;
+    animation: animation 3s ease forwards;
+    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+    animation-delay: 0.3s;
+}
+.categories-header h1 li:nth-of-type(2):after,
+.categories-header h1 li:nth-of-type(2) div {
+    animation-delay: 0.35s;
+}
+.categories-header h1 li:nth-of-type(3):after,
+.categories-header h1 li:nth-of-type(3) div {
+    animation-delay: 0.4s;
+}
+.categories-header h1 li:nth-of-type(4):after,
+.categories-header h1 li:nth-of-type(4) div {
+    animation-delay: 0.45s;
+}
+.categories-header h1 li:nth-of-type(5):after,
+.categories-header h1 li:nth-of-type(5) div {
+    animation-delay: 0.5s;
+}
+.categories-header h1 li:nth-of-type(6):after,
+.categories-header h1 li:nth-of-type(6) div {
+    animation-delay: 0.55s;
+}
+.categories-header h1 li:nth-of-type(7):after,
+.categories-header h1 li:nth-of-type(7) div {
+    animation-delay: 0.6s;
+}
+.categories-header h1 li:nth-of-type(8):after,
+.categories-header h1 li:nth-of-type(8) div {
+    animation-delay: 0.65s;
+}
+.categories-header h1 li:nth-of-type(9):after,
+.categories-header h1 li:nth-of-type(9) div {
+    animation-delay: 0.7s;
+}
+.categories-header h1 li:nth-of-type(10):after,
+.categories-header h1 li:nth-of-type(10) div {
+    animation-delay: 0.75s;
+}
 .cards {
     width: 100%;
     padding: var(--page--padding);

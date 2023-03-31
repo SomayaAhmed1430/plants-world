@@ -26,13 +26,18 @@
         <ul>
 
             <li>
+                <x-admin-nav-link :href="route('welcom')" :active="request()->routeIs('welcom')">
+                    {{ __('Home') }}
+                </x-admin-nav-link>
+            </li>
+            <li>
                 <x-admin-nav-link :href="route('admin.categories.index')" :active="request()->routeIs('admin.categories.index')">
                     {{ __('Categories') }}
                 </x-admin-nav-link>
             </li>
             <li>
                 <x-admin-nav-link :href="route('admin.menus.index')" :active="request()->routeIs('admin.menus.index')">
-                    {{ __('Menus') }}
+                    {{ __('Products') }}
                 </x-admin-nav-link>
             </li>
             <li>

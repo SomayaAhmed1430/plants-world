@@ -1,4 +1,8 @@
+<head>
+    <title>Plant World | About</title>
+</head>
 <x-guest-layout>
+
     <div class="home">
         <div class="title">
             <div class="title-con">ABOUT US</div>

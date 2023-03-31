@@ -1,3 +1,11 @@
+<head>
+    <title>Admin | Edit</title>
+    <link
+            rel="shortcut icon"
+            href="{{ asset('assets/FaveIcon.svg') }}"
+            type="image/x-icon"
+        />
+</head>
 <style>
     div a{
         margin-top: 10%;
